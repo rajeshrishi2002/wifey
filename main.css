@@ -231,7 +231,7 @@ header {
 .bar3 {
 	width: 22px;
 	height: 3px;
-	background-color:var(--white);
+	background-color:var(--linkgreen);
 	margin: 4px 0;
     transition: 0.2s;
     border-radius: 1px;
@@ -431,15 +431,15 @@ header {
     padding-bottom: 120px;
 }
 .arrow-scroll-down svg{
-    fill: #fff;
+    fill: #ffffff;
     width: 32px;
     height: 43px;
     position: relative;
 }
 .last_listen{
-    background-color: #1E3264;
-    background-image: -webkit-gradient(linear, left top, right top, from(#2c5e92), color-stop(80%, #552f6d));
-    background-image: linear-gradient(90deg, #2c5e92 0%, #552f6d 80%);
+    background-color: #29023c;
+    background-image: -webkit-gradient(linear, left top, right top, from(#29023c), color-stop(80%, #3b0059));
+    background-image: linear-gradient(90deg,#33013d 0%, #006179 80%);
 }
 .last_listen .container{
     padding-top: 60px;
