@@ -1,6 +1,6 @@
 // Initialize the Variables
 let songIndex = 0;
-let audioElement = new Audio('Bujji.mp3');
+let audioElement = new Audio('bts.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');

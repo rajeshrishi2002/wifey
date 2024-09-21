@@ -9,15 +9,7 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
     {songName: "HeyPondati", filePath: "songs/4.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Lover - TaylorSwift", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
-    {songName: "ME! - TaylorSwift", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
-    {songName: "TaylorSwift Mashup", filePath: "songs/4.mp3", coverPath: "covers/4.png"},
-    {songName: "Doraemon song", filePath: "songs/5.mp3", coverPath: "covers/5.png"},
-    {songName: "Doraemon new song ", filePath: "songs/6.mp3", coverPath: "covers/6.png"},
-    {songName: "Dynamite", filePath: "songs/7.mp3", coverPath: "covers/7.png"},
-    {songName: "We Are Bulletproof", filePath: "songs/8.mp3", coverPath: "covers/8.png"},
-    {songName: "BTS Mashup", filePath: "songs/9.mp3", coverPath: "covers/9.jpg"},
-    {songName: "En Jeevan", filePath: "songs/10.mp3", coverPath: "covers/10.jpg"},
+
 ]
 
 songItems.forEach((element, i)=>{ 
@@ -73,35 +65,4 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
     })
-})
-
-document.getElementById('next').addEventListener('click', ()=>{
-    if(songIndex>=9){
-        songIndex = 0
-    }
-    else{
-        songIndex += 1;
-    }
-    audioElement.src = `songs/${songIndex+1}.mp3`;
-    masterSongName.innerText = songs[songIndex].songName;
-    audioElement.currentTime = 0;
-    audioElement.play();
-    masterPlay.classList.remove('fa-play-circle');
-    masterPlay.classList.add('fa-pause-circle');
-
-})
-
-document.getElementById('previous').addEventListener('click', ()=>{
-    if(songIndex<=0){
-        songIndex = 0
-    }
-    else{
-        songIndex -= 1;
-    }
-    audioElement.src = `songs/${songIndex+1}.mp3`;
-    masterSongName.innerText = songs[songIndex].songName;
-    audioElement.currentTime = 0;
-    audioElement.play();
-    masterPlay.classList.remove('fa-play-circle');
-    masterPlay.classList.add('fa-pause-circle');
 })
