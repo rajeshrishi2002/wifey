@@ -13,8 +13,14 @@
 			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<!--Stylesheets-->
 	</head>
 	<body>
+
+
+
+		
 		<!--Header-->
 		<custom-header></custom-header>
 		<!--Header-->
@@ -24,6 +30,7 @@
 			<div class="hm_gradient-2"></div>
 			<div class="container hm_cont">
 				<span class="home_text">
+				
 					<!-- <small>Recently Songs</small> -->
 					<h1 class="">Hey Pondati</h1>
 					<h3>namaku pudicha songs laam kepomaa...</h3>
@@ -209,7 +216,7 @@ Your latest listening trends</h1>
 				</div>
 			</div>
 		</div>
-
+	
 		<!--Footer-->
 		<custom-footer></custom-footer>
 		<!--Footer-->
@@ -218,5 +225,85 @@ Your latest listening trends</h1>
 		<script src="header.js"></script>
 		<script src="footer.js"></script>
 		<script src="main.js"></script>
+		<div class="popup">
+			<br>
+			<h1>Hey Pondati❤️</h1><br><br>
+			<h2>
+				Seekarama Kalyanam Pannikalaama Di
+			</h2>
+			<button id="close"><h4>Okay❤️</h4></button>
+		</div>
 	</body>
+	<style media="screen">
+		*,
+*:before,
+*:after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.popup{
+  color: #ffffff;
+  background-color: rgba(0, 169, 20, 0.723);
+	width: 300px;
+	padding: 10px 10px;
+	position: fixed;
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 50%;
+	font-size: 10px;
+	border-radius: 8px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	display: none; 
+	text-align: center;
+	border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  transition: opacity 256ms ease-in;
+}
+	
+.popup button{
+  
+	display: block;
+	margin:  10px 105px 20px auto;
+	background-color: rgba(0, 191, 22, 0.723);
+	font-size: 14px;
+	color: #ffffff;
+	background-color: rgba(1, 187, 23, 0.723);
+		border-radius: 10%;
+		width: 65px;
+		height: 30px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.65);
+	
+}
+.popup h2{
+	margin-top: -20px;
+}
+.popup p{
+	font-size: 14px;
+	text-align: justify;
+	margin: 20px 0;
+	line-height: 25px;
+}
+	</style>
+	    <script type="text/javascript">
+			window.addEventListener("load", function(){
+				setTimeout(
+					function open(event){
+						document.querySelector(".popup").style.display = "block";
+					},
+					7000 
+				)
+			});
+			
+			
+			document.querySelector("#close").addEventListener("click", function(){
+				document.querySelector(".popup").style.display = "none";
+				
+			});
+			
+				</script>
 </html>
