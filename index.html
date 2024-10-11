@@ -231,10 +231,10 @@ Your latest listening trends</h1>
 			<h2>
 				Seekarama Kalyanam Pannikalaama Di
 			</h2>
-			<button id="close"><h4>Okay❤️</h4></button>
+			<button id="close"><h4 style="font-size: 13px; margin-top: 6px;">Okay❤️</h4></button>
 		</div>
 	</body>
-	<style media="screen">
+	<style media="screen">l
 		*,
 *:before,
 *:after{
@@ -242,24 +242,25 @@ Your latest listening trends</h1>
 	margin: 0;
 	box-sizing: border-box;
 }
-.popup{
+.popup {
   color: #ffffff;
   background-color: rgba(0, 169, 20, 0.723);
-	width: 300px;
-	padding: 10px 10px;
-	position: fixed;
-	transform: translate(-50%,-50%);
-	left: 50%;
-	top: 50%;
-	font-size: 10px;
-	border-radius: 8px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	display: none; 
-	text-align: center;
-	border-radius: 12px;
+  width: 300px;
+  padding: 10px 10px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  font-size: 10px;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  text-align: center;
+  border-radius: 12px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.65);
   backdrop-filter: blur(4px);
   transition: opacity 256ms ease-in;
+  z-index: 1000; /* Add this line */
 }
 	
 .popup button{

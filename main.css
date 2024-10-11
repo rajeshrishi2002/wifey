@@ -861,6 +861,7 @@ footer .social ul li a:hover .twitter{
 footer .social ul li a:hover .face{
     background: no-repeat url(../assets/face.svg), var(--hvrgreen);
 }
+
 footer .tr { 
     grid-area: tr;
     margin: 0;
